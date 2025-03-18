@@ -1,28 +1,39 @@
 {
   "expo": {
-    "name": "BusTrack",
-    "slug": "BusTrack",
+    "name": "Rajasthan Bus Tracking",
+    "slug": "rajasthan-bus-tracking",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/bus_logo.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/Namaste.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#FF8C00"
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourcompany.rajasthanbustracking",
+      "jsEngine": "hermes"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "foregroundImage": "./assets/Namaste.png",
+        "backgroundColor": "#FF8C00"
+      },
+      "package": "com.yourcompany.rajasthanbustracking",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ],
+      "softwareKeyboardLayoutMode": "pan",
+      "jsEngine": "hermes"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/bus_logo.png"
     }
   }
 }
