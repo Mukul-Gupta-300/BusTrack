@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, View, Text, TouchableOpacity, SafeAreaView } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { Ionicons } from '@expo/vector-icons';
-import { logoutUser } from 'C:/Users/mukul/OneDrive/Desktop/app/BusTrackingApp/services/authService.js';
+import { logoutUser } from '../../services/authService.js';
 
 export default function HomeScreen() {
   const navigation = useNavigation();

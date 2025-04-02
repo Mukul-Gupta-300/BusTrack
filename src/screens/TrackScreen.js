@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { StyleSheet, View, Text, TextInput, TouchableOpacity, SafeAreaView, Alert } from 'react-native';
 import { Picker } from '@react-native-picker/picker'; // Updated import
-import { getToken } from 'C:/Users/mukul/OneDrive/Desktop/app/BusTrackingApp/services/authService.js';
-import { getBusList, trackBus } from 'C:/Users/mukul/OneDrive/Desktop/app/BusTrackingApp/services/busService.js';
+import { getToken } from '../../services/authService.js';
+import { getBusList, trackBus } from '../../services/busService.js';
 import { Ionicons } from '@expo/vector-icons';
 
 export default function TrackScreen({ navigation }) {

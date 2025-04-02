@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, Text, TextInput, TouchableOpacity, SafeAreaView, ActivityIndicator, Alert, Image } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import { resetPassword } from 'C:/Users/mukul/OneDrive/Desktop/app/BusTrackingApp/services/authService.js';
+import { resetPassword } from '../../services/authService.js';
 
 export default function ForgotPasswordScreen({ navigation }) {
   const [email, setEmail] = useState('');

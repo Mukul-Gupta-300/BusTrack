@@ -43,14 +43,14 @@ const SplashScreen = ({ navigation }) => {
       <View style={styles.content}>
         {/* Bus Logo */}
         <Image
-          source={require('C:/Users/mukul/OneDrive/Desktop/app/BusTrackingApp/assets/bus_logo.png')}
+          source={require('../../assets/bus_logo.png')}
           style={styles.logo}
           resizeMode="contain"
         />
         
         {/* Namaste background (absolute positioned) */}
         <Image
-          source={require('C:/Users/mukul/OneDrive/Desktop/app/BusTrackingApp/assets/Namaste.png')}
+          source={require('../../assets/Namaste.png')}
           style={styles.namasteBg}
           resizeMode="contain"
         />

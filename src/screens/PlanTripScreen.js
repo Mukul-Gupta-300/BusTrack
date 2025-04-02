@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, Text, TextInput, TouchableOpacity, SafeAreaView, Alert } from 'react-native';
-import { getToken } from 'C:/Users/mukul/OneDrive/Desktop/app/BusTrackingApp/services/authService.js';
-import { getBusList } from 'C:/Users/mukul/OneDrive/Desktop/app/BusTrackingApp/services/busService.js';
+import { getToken } from '../../services/authService.js';
+import { getBusList } from '../../services/busService.js';
 import { Ionicons } from '@expo/vector-icons';
 
 export default function PlanTripScreen({ navigation }) {

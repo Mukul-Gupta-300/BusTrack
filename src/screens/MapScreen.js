@@ -3,7 +3,7 @@ import { StyleSheet, View, Text, TouchableOpacity, SafeAreaView } from 'react-na
 import MapView, { Marker, Polyline } from 'react-native-maps';
 import * as Location from 'expo-location';
 import { Ionicons } from '@expo/vector-icons';
-import { subscribeToBusLocation } from 'C:/Users/mukul/OneDrive/Desktop/app/BusTrackingApp/services/busService.js';
+import { subscribeToBusLocation } from '../../services/busService.js';
 
 export default function MapScreen({ navigation, route }) {
   const { source, destination, busId, distance, eta, currentLocation } = route.params;

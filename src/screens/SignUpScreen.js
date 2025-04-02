@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, Text, TouchableOpacity, SafeAreaView, TextInput, ActivityIndicator, Alert, Image } from 'react-native';
-import { signUpUser } from 'C:/Users/mukul/OneDrive/Desktop/app/BusTrackingApp/services/authService.js';
+import { signUpUser } from '../../services/authService.js';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Ionicons } from '@expo/vector-icons';
 
@@ -54,7 +54,7 @@ export default function SignUpScreen({ navigation }) {
           <View style={styles.logoContainer}>
             <Image
               style={styles.logo}
-              source={require('C:/Users/mukul/OneDrive/Desktop/app/BusTrackingApp/assets/bus_logo.png')}  // Make sure you have this icon in your assets
+              source={require('../../assets/bus_logo.png')}  // Make sure you have this icon in your assets
             />
             <Text style={styles.appName}>Bus Booking App</Text>
             <Text style={styles.welcomeText}>Namaste</Text>
