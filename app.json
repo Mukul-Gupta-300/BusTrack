@@ -1,28 +1,69 @@
 {
   "expo": {
-    "name": "BusTrackingApp",
-    "slug": "BusTrackingApp",
-    "version": "1.0.0",
+    "name": "Rajasthan Bus Tracking",
+    "slug": "rajasthan-bus-tracking",
+    "version": "1.0.1",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/bus_logo.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/bus_logo.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#FF8C00"
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.navyagupta.rajasthanbustracking",
+      "icon": "./assets/bus_logo.png"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "foregroundImage": "./assets/bus_logo.png",
+        "backgroundColor": "#FF8C00"
+      },
+      "icon": "./assets/bus_logo.png",
+      "package": "com.navyagupta.rajasthanbustracking",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "INTERNET"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCs3p3WCkfwajcqlwXbzdfx1mwgNhlfkgU"
+        }
+      },
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "data": [
+            {
+              "scheme": "bustrackingapp",
+              "host": "*"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ]
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/bus_logo.png"
+    },
+    "scheme": "bustrackingapp",
+    "description": "A mobile app for tracking buses in Rajasthan, providing real-time updates, trip planning, and safety information.",
+    "extra": {
+      "SUPABASE_URL": "https://yjscptkgnpsoherhiuqr.supabase.co",
+      "SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inlqc2NwdGtnbnBzb2hlcmhpdXFyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDM0Mzg0MzIsImV4cCI6MjA1OTAxNDQzMn0.YuNDYm6nIBf5u_am-USkhwOxa3wlmwOAP25uZEkJ4tc",
+      "eas": {
+        "projectId": "f6cac82a-87ba-4290-bb1c-d9fdfb299640"
+      }
+    },
+    "owner": "mukul-gupta"
   }
 }
